@@ -1,0 +1,104 @@
+.collection{
+
+    &__container{
+        background-image: url(../images/collection.png);
+        margin-top: 135px;
+        background-repeat: no-repeat;
+        background-position: calc(50%) 0;
+        background-size: contain;
+    }
+    &__list{
+        margin: 0;
+        padding: 0;
+        padding-top: 126px;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+    &__item-text{
+        max-width: 255px;
+    }
+    &__heading{
+        margin: 0;
+        padding: 0;
+        margin-top: 70px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #333D4B;
+
+    }
+
+    &__desc{
+        margin: 0;
+        padding: 0;
+
+        margin-top: 25px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #333D4B;
+    }
+
+
+
+}
+@media only screen  and (max-width: 1105px){
+
+    .collection{
+        &__list{
+            padding-top: 30px;
+            display: block;
+        }
+        &__item{
+            margin-top: 40px;
+            max-width: 573px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+        }
+        &__item-text{
+            max-width: 282px;
+            margin-left: 35px;
+
+
+        }
+        &__heading{
+            margin: 0;
+        }
+        &__heading , &__desc{
+            text-align: start;
+        }
+    }
+
+}
+@media only screen and ( max-width:580px){
+
+    .collection{
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+
+        }
+        &__item-text{
+            margin: 0;
+        }
+        &__heading{
+            margin-top: 24px;
+            text-align: center;
+        }
+        &__desc{
+            margin-top: 16px;
+            text-align: center;
+        }
+    }
+
+
+
+
+
+}
